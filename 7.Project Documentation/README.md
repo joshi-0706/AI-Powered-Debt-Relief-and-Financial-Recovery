@@ -1,103 +1,369 @@
 # Phase 7: Project Documentation
 
-This folder contains the complete operational instructions, user manuals, and run guides for **BlogForge - AI Powered Debt Relief & Financial Recovery Platform**.
+<div align="center">
+
+# 💰 AI-Powered Debt Relief & Financial Recovery Platform
+
+### 🤖 AI-Driven Financial Assistance Platform using FastAPI, React & Google Gemini AI
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/React-18-blue?logo=react"/>
+<img src="https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi"/>
+<img src="https://img.shields.io/badge/Python-3.11-yellow?logo=python"/>
+<img src="https://img.shields.io/badge/Vite-Latest-purple?logo=vite"/>
+<img src="https://img.shields.io/badge/Google-Gemini-orange?logo=google"/>
+<img src="https://img.shields.io/badge/SQLite-Database-blue?logo=sqlite"/>
+<img src="https://img.shields.io/badge/Render-Backend-success?logo=render"/>
+<img src="https://img.shields.io/badge/Vercel-Frontend-black?logo=vercel"/>
+
+</p>
 
 ---
 
-## 1. System Requirements
-*   **Operating System**: Windows, macOS, or Linux.
-*   **Python Environment**: Python 3.11 or newer (tested on Python 3.13.6).
-*   **Node Environment**: Node.js v18 or newer (tested on Node.js v22.18).
-*   **Package Manager**: `npm` v9 or newer.
+### 🌐 Live Demo
+
+🚀 **Frontend**
+
+https://ai-powered-debt-relief-and-financial-recovery-q2y6ikdr4.vercel.app
+
+⚙️ **Backend API**
+
+https://ai-powered-debt-relief-backend.onrender.com
+
+📚 **Swagger API**
+
+https://ai-powered-debt-relief-backend.onrender.com/docs
+
+💻 **GitHub Repository**
+
+https://github.com/joshi-0706/AI-Powered-Debt-Relief-and-Financial-Recovery
+
+</div>
 
 ---
 
-## 2. Installation & Local Setup
+# 📖 Overview
 
-### Step 1: Clone the Repository
-Open your terminal and clone your GitHub repository:
-```bash
-git clone https://github.com/suryaprabhat/BlogeForge_AI-Debt-Relief.git
-cd BlogeForge_AI-Debt-Relief
+Managing debt is often stressful and confusing.
+
+The **AI-Powered Debt Relief & Financial Recovery Platform** helps users understand their financial condition, predict settlement offers, generate AI-powered hardship letters, and manage multiple loan accounts from one modern dashboard.
+
+The application combines **Artificial Intelligence** with **financial analytics** to simplify debt recovery.
+
+---
+
+# ✨ Features
+
+## 🔐 Authentication
+
+✔ User Registration
+
+✔ Secure Login
+
+✔ JWT Authentication
+
+✔ Protected Routes
+
+---
+
+## 👤 User Profile
+
+- Update Profile
+- Monthly Income
+- Monthly Expenses
+- Personal Financial Information
+
+---
+
+## 💳 Loan Management
+
+- Add Loan
+- Edit Loan
+- Delete Loan
+- Outstanding Balance
+- Monthly EMI
+- Interest Rate
+- Creditor Details
+
+---
+
+## 📊 Financial Dashboard
+
+Automatically calculates
+
+- Debt Stress Index
+- Debt-to-Income Ratio
+- Monthly Surplus
+- EMI Ratio
+- Financial Health Status
+
+Interactive dashboard with beautiful UI.
+
+---
+
+## 💡 Settlement Predictor
+
+Predicts
+
+- Settlement Percentage
+- Settlement Amount
+- Recommended Offer
+- Repayment Strategy
+- Risk Analysis
+
+---
+
+## 🤖 AI Letter Generator
+
+Integrated with **Google Gemini AI**
+
+Generate
+
+- Hardship Letters
+- Settlement Request Letters
+- Debt Negotiation Letters
+
+One click
+
+✔ Generate
+
+✔ Copy
+
+✔ Download
+
+---
+
+## 📜 History
+
+Maintain history of
+
+- Generated Letters
+- Loan Activities
+- Financial Updates
+
+---
+
+# 🖥️ Technology Stack
+
+| Frontend | Backend | Database | AI | Deployment |
+|------------|------------|------------|------------|------------|
+| React.js | FastAPI | SQLite | Google Gemini AI | Vercel |
+| Vite | SQLAlchemy | | REST API | Render |
+| React Router | JWT Authentication | | | |
+
+---
+
+# 📂 Project Structure
+
+```
+AI-Powered-Debt-Relief-and-Financial-Recovery
+
+│
+
+├── frontend
+│   ├── src
+│   ├── public
+│   ├── assets
+│   ├── pages
+│   ├── context
+│   ├── components
+│   └── vite.config.js
+│
+├── backend
+│   ├── app
+│   ├── models
+│   ├── routers
+│   ├── database
+│   ├── services
+│   ├── requirements.txt
+│   └── run.py
+│
+└── README.md
 ```
 
-### Step 2: Configure the Backend Environment
-1.  Navigate to the backend directory:
-    ```bash
-    cd "5. Project Development Phase/backend"
-    ```
-2.  Create a virtual environment:
-    ```bash
-    python -m venv venv
-    ```
-3.  Activate the virtual environment:
-    *   **Windows (PowerShell)**: `.\venv\Scripts\Activate.ps1`
-    *   **macOS / Linux**: `source venv/bin/activate`
-4.  Install the required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-5.  Configure your environment variables. Create a `.env` file inside the `backend/` directory:
-    ```env
-    # Google Gemini API key from AI Studio
-    GEMINI_API_KEY=your_actual_gemini_api_key_here
-    ```
+---
 
-### Step 3: Configure the Frontend Environment
-1.  Navigate to the frontend directory:
-    ```bash
-    cd "../frontend"
-    ```
-2.  Install the required Node packages:
-    ```bash
-    npm install
-    ```
-3.  Create a `.env` file inside the `frontend/` directory (for pointing to the local backend during development):
-    ```env
-    VITE_API_URL=http://127.0.0.1:8000
-    ```
+# 🚀 Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/joshi-0706/AI-Powered-Debt-Relief-and-Financial-Recovery.git
+
+cd AI-Powered-Debt-Relief-and-Financial-Recovery
+```
 
 ---
 
-## 3. Running the Applications Locally
+# Backend
 
-To run the application locally, you must start both the backend API server and the frontend client dev server:
+```bash
+cd backend
 
-### 1. Launch the Backend API (Terminal 1)
-Make sure you are in the `/backend` folder and your virtual environment is active, then run:
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+Create
+
+```
+.env
+```
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Run Backend
+
 ```bash
 python run.py
 ```
-*The FastAPI server will boot and listen on **`http://127.0.0.1:8000`**. You can access the interactive Swagger API documentation at `http://127.0.0.1:8000/docs`.*
 
-### 2. Launch the Frontend Dev Server (Terminal 2)
-Make sure you are in the `/frontend` folder, then run:
-```bash
-npm run dev
+Backend
+
 ```
-*Vite will spin up the web client at **`http://localhost:5173/`**. Open this URL in your web browser.*
+http://127.0.0.1:8000
+```
+
+Swagger
+
+```
+http://127.0.0.1:8000/docs
+```
 
 ---
 
-## 4. User Guide & Core Features
+# Frontend
 
-### 1. Account Setup
-1.  Click **Create Account** and register with your email and name.
-2.  Upon logging in, click **Profile Settings** and configure your **Monthly Income** and **Basic Expenses**. This is crucial for calculating your debt ratios accurately.
+```bash
+cd frontend
 
-### 2. Loan Management
-1.  Click **Add Loan Account** on the dashboard.
-2.  Enter details of your outstanding balances, active interest rates (APR), monthly EMI obligations, and overdue duration (months delinquent).
-3.  The dashboard will automatically update your overall **Total Debt**, **Total monthly EMIs**, and **Monthly Surplus**, and plot your **Debt Distress Level** (Low, Medium, High, or Severe) on the custom visual dial.
+npm install
+```
 
-### 3. Settlement Prediction
-1.  Go to the **Settlement Predictor** page.
-2.  Select an active loan. The engine will calculate target payoff values (e.g. 35% to 55% of the total balance) and evaluate your default risk level.
-3.  It will display structured payoff plans, detailing single lump-sum payoffs vs. structured 3-month/6-month installment schedules.
+Create
 
-### 4. Drafting AI Hardship Letters
-1.  Go to the **AI Letter Generator** page.
-2.  Select the creditor account, select a primary hardship reason (Job Loss, Medical Issue, etc.), and provide brief supporting details.
-3.  Click **Generate**. The Google Gemini API will construct a custom formal proposal.
-4.  Copy the compiled letter text or click **Download** to save it as a text file to print or mail to the creditor.
+```
+.env
+```
+
+```env
+VITE_API_URL=http://127.0.0.1:8000
+```
+
+Run
+
+```bash
+npm run dev
+```
+
+Frontend
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🌍 Production Deployment
+
+## Frontend
+
+https://ai-powered-debt-relief-and-financial-recovery-q2y6ikdr4.vercel.app
+
+## Backend
+
+https://ai-powered-debt-relief-backend.onrender.com
+
+## Swagger
+
+https://ai-powered-debt-relief-backend.onrender.com/docs
+
+---
+
+# 📸 Application Screenshots
+
+> Add screenshots below after uploading them to GitHub.
+
+### Login
+
+```
+assets/login.png
+```
+
+### Dashboard
+
+```
+assets/dashboard.png
+```
+
+### Settlement Predictor
+
+```
+assets/predictor.png
+```
+
+### AI Letter Generator
+
+```
+assets/letter.png
+```
+
+### Loan Management
+
+```
+assets/loan.png
+```
+
+---
+
+# 🎯 Future Enhancements
+
+- Credit Score Prediction
+- AI Financial Advisor Chatbot
+- Email Notifications
+- PDF Export
+- Multi-language Support
+- Payment Gateway
+- Loan Recommendation Engine
+- Mobile Application
+
+---
+
+# 👨‍💻 Developer
+
+## **Joshi Karu**
+
+Computer Science Undergraduate
+
+GitHub
+
+https://github.com/joshi-0706
+
+---
+
+# ⭐ Support
+
+If you like this project,
+
+⭐ Star this repository
+
+🍴 Fork it
+
+📢 Share it with others
+
+---
+
+<div align="center">
+
+## Thank You ❤️
+
+Built with ❤️ using React, FastAPI & Google Gemini AI
+
+</div>as a text file to print or mail to the creditor.
 5.  Access past letters at any time on the **History & Logs** tab.
